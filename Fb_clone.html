@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <style type="text/css">
+
+ {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #385898;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3b5998;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+header a {
+    color: #fff;
+}
+
+header a:hover {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.login-form {
+    display: flex;
+    align-items: center;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    margin-right: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+}
+
+.login-form button {
+    background-color: #4a6ea9;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Main styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.main-content h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.main-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main-content form label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.main-content form input[type="text"],
+.main-content form input[type="email"],
+.main-content form input[type="password"],
+.main-content form select {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.main-content form select {
+    appearance: none;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath d='M5 11l5 5 5-5H5z'/%3E%
+/* Footer styles */
+footer {
+background-color: #f5f5f5;
+padding: 20px;
+font-size: 12px;
+text-align: center;
+}
+
+footer nav {
+margin-bottom: 10px;
+}
+
+footer nav ul {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+footer nav li {
+margin-right: 10px;
+}
+
+footer nav a {
+color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+header {
+flex-direction: column;
+align-items: flex-start;
+padding: 20px;
+}
+.login-form {
+    margin-top: 10px;
+}
+
+.main-content {
+    width: 90%;
+}
+
+
+@media (max-width: 480px) {
+.logo {
+font-size: 24px;
+}
+
+.main-content h1 {
+    font-size: 24px;
+}
+
+.main-content form label {
+    font-size: 14px;
+}
+
+.main-content form input[type="text"],
+.main-content form input[type="email"],
+.main-content form input[type="password"],
+.main-content form select {
+    padding: 5px;
+    font-size: 14px;
+}
+}
+   </style>
+
+
+<meta charset="UTF-8">
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img width="50" src="https://imgs.search.brave.com/LTptH-0wgfJuNDMjqxCWZFLW2xlwm7EsT1yICVEg1n0/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jbGlw/YXJ0LmluZm8vaW1h/Z2VzL2Njb3ZlcnMv/MTUwOTEzNTE4MUZh/Y2Vib29rLWxvZ28t/cG5nLXJlZC5wbmc" alt="Facebook Logo">
+        </div>
+        <form>
+            <input type="text" placeholder="Email or Phone Number">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </form>
+    </header>
+    <main>
+        <div class="left-column">
+            <h2>Connect with friends and the world around you on Facebook.</h2>
+            <img src="https://imgs.search.brave.com/XPVFIho_okp-Kn16E0-C7X_1Fhzu4eDLFeZOdyI7sQ4/rs:fit:512:512:1/g:ce/aHR0cHM6Ly9jZG4z/Lmljb25maW5kZXIu/Y29tL2RhdGEvaWNv/bnMvd2ViLWhvc3Rp/bmctMi0xLzEyOC82/OS01MTIucG5n" alt="Facebook Screenshot">
+        </div>
+        <div class="right-column">
+            <h2>Create an account</h2>
+            <p>It's quick and easy.</p>
+            <form>
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="text" placeholder="Mobile Number or Email">
+                <input type="password" placeholder="New Password">
+                <p>Birthday</p>
+                <select>
+                    <option>Day</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+                </select>
+                <select>
+                    <option>Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select>
+                    <option>Year</option>
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                                    <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+                <option>2011</option>
+                <option>2010</option>
+                <option>2009</option>
+                <option>2008</option>
+                <option>2007</option>
+                <option>2006</option>
+                <option>2005</option>
+                <option>2004</option>
+                <option>2003</option>
+                <option>2002</option>
+                <option>2001</option>
+                <option>2000</option>
+                <option>1999</option>
+                <option>1998</option>
+                <option>1997</option>
+                <option>1996</option>
+                <option>1995</option>
+                <option>1994</option>
+                <option>1993</option>
+                <option>1992</option>
+                <option>1991</option>
+                <option>1990</option>
+            </select>
+            <div class="gender">
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+            <p>By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy</a> and <a href="#">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</p>
+            <button>Sign Up</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#">Sign Up</a></li>
+            <li><a href="#">Log In</a></li>
+            <li><a href="#">Messenger</a></li>
+            <li><a href="#">Facebook Lite</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Page Categories</a></li>
+            <li><a href="#">Places</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Facebook Pay</a></li>
+            <li><a href="#">Groups</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Oculus</a></li>
+            <li><a href="#">Portal</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Local</a></li>
+            <li><a href="#">Fundraisers</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Create ad</a></li>
+            <li><a href="#">Create Page</a></li>
+            <li><a href="#">Developers</a></li>
+<li><a href="#">Privacy</a></li>
+<li><a href="#">Cookies</a></li>
+<li><a href="#">Ad Choices</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Help</a></li>
+</ul>
+</nav>
+<p>Facebook © 2023</p>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
+
